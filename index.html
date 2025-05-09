@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link rel="shortcut icon" href="./public/images/favicon.ico">
+    <meta name="description" content="shopping, online shoppng, online dress, woman dress....">
+    <meta http-equiv="refresh" content="50">
+    <meta name="author" content="ritik">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        header{
+            font-family: Arial;
+            font-size: 15px;
+        }
+       .header-row-1{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: lightgray;    
+        
+            
+       }
+
+        .header-row-1 span{
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+
+        .header-row-1 aside{
+            padding-left: 5px;
+            padding-right: 5px;
+            color: #000;
+        }
+        .header-row-2{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: 30px;
+        
+       }
+       .brand-title{
+        font-size: 30px;
+        padding-left: 50px;
+
+
+       }
+       .header-row-2 nav span{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+       }
+       .icon .bi{
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+       article{
+        background-color: #000;
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial;
+        color: #fff;
+        padding: 15px;
+       }
+       article .bi{
+        color: gold;
+       }
+
+        main{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            height: 500px;
+        }
+        .men-image{
+            background-image: url(./public/images/men-dress.jpg);
+            background-size: cover;
+        }
+        .women-image{
+            background-image: url(./public/images/women-dress.jpg);
+            background-size: cover;
+        }
+        .kids-image{
+            background-image: url(./public/images/Kids-dress.jpg);
+            background-size: cover;
+        }
+
+        .men-image{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity:0.7;
+            
+        }
+        .women-image{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .kids-image{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .main-title{
+            font-family: Arial;
+            font-size: 50px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 4px 4px 3px black ;
+
+        }
+
+        .btn-image{
+            background-color: #fff;
+            padding: 20px;
+            font-size: 18px;
+            width: 120px;
+            text-align: center;
+        }
+       
+        .men-image:hover, .women-image:hover, .kids-image:hover {
+            opacity: 1;
+        }
+        .free-help{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 30px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            
+        }
+        .free-help .bi{
+            color: red;
+            padding-right: 20px;
+        }
+        .free-help p{
+            padding-left: 40px;
+            color: gray;   
+        }
+        hr{
+            margin-left: 60px;
+            margin-right: 60px;
+            color: lightgray;
+        }
+        .new-collection{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-template-rows: 250px 400px 400px;
+            margin-left: 110px;
+            margin-right: 110px;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        .best-pic{
+            grid-column: 1/ 4;
+            text-align: center;
+            
+        }
+        .best-pic h4{
+            color: gray;
+        }
+        .best-pic h1{
+            font-size: 40px;
+            font-family: Algerian Regular;
+        }
+        .best-pic p{
+            color: gray;
+        }
+        .bag-collection{
+            grid-column: 1;
+            background-image: url(./public/images/ladies-bag.jpg);
+            background-size: cover;
+        }
+        .printed-shirt{
+            grid-column: 2 /4 ;
+            background-image: url(./public/images/printed-shirt.jpg);
+            background-size: cover;
+        }
+        .basic-women-dress{
+            grid-column: 1 / 3;
+            background-image: url(./public/images/basic-women-dress.jpg);
+            background-size: cover;
+        }
+        .sweatshirts{
+            grid-column: 3 /4;
+            background-image: url(./public/images/sweatshirts.jpg);
+            background-size: cover;
+        }
+        footer{
+            background-color: rgb(24, 24, 24);
+            height: 600px;
+            color: white;
+            font-family: arial;
+            margin-top: 50px;
+            
+        }
+        .footer-heading{
+            font-size: 30px ;
+            align-items: center;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .footer-form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 50px;
+            font-family: arial;
+        }
+        footer .email{
+            background-color: rgba(77, 77, 77, 0.4);
+            width: 350px;
+            padding: 20px;
+        }
+        footer .subscribe{
+            background-color: rgb(77, 77, 77);
+            width: 100px;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        .footer-row-2{
+            display: grid;
+            grid-template-columns: 3fr 2.25fr 2.25fr 2.25fr 2.25fr;
+            margin: 100px 100px 40px 100px;
+        }
+        .footer-brand-title{
+            font-size: 25px;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+        footer aside span{
+            color: rgb(131, 129, 129);
+            padding-right: 15px;
+        }
+        footer .service-title{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: block;
+            padding-bottom: 20px;
+        }
+        footer .service-title~span{
+            display: block;
+            padding-bottom: 10px;
+            color: #9e9b9b;
+        }
+        footer address span{
+            display: block;
+            padding-bottom: 10px;
+            color: #9e9b9b;
+        }
+        .footer-row-3{
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid white;
+            padding: 20px;
+            
+        }
+    </style>
+
+</head>
+
+    <body>
+        <header>
+            <div class="header-row-1">
+                <div class="col-1">
+                    <span class="bi bi-truck"> FREE SHIPPING WORLDWIDE </span>
+                    <span>United States <span class="bi bi-chevron-down"></span></span>
+                    <span>USD <span class="bi bi-chevron-down"></span></span>
+                    <span>English <span class="bi bi-chevron-down"></span></span>
+                </div>
+                <div>
+                    <span>Shipping</span>
+                    <span>FQA</span>
+                    <span>Contact</span>
+                </div>
+                <div>
+                    <aside>
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-youtube"></span>
+                        <span class="bi bi-twitter-x"></span>
+                    </aside>
+                </div>
+            </div>
+            <div class="header-row-2">
+                <div>
+                    <span class="brand-title">Shoper.</span>
+                </div>
+                <div>
+                    <nav>
+                        <span>Home</span>
+                        <span>Catalog</span>
+                        <span>Shop</span>
+                        <span>Pages</span>
+                        <span>Blog</span>
+                        <span>Docs</span>
+                    </nav>
+                </div>
+                <div class="icon">
+                    <span class="bi bi-search"></span>
+                    <span class="bi bi-people"></span>
+                    <span class="bi bi-heart"></span>
+                    <span class="bi bi-cart"></span>
+                </div>
+            </div>
+        </header>
+        <section>
+            <article>
+                <div>
+                    <span class="bi bi-lightning-charge-fill"></span>
+                    <span>HAPPY HOLIDAY DEALS WITH EVERY THINGS</span>
+                    <span class="bi bi-lightning-charge-fill"></span>
+                </div>
+            </article>
+            <main>
+                <div class="men-image">
+                    <div class="main-title">Men</div>
+                    <div class="btn-image">Shop Men <span class="bi bi-arrow-right"></span></div>
+                </div>
+                <div class="women-image">
+                    <div class="main-title">Women</div>
+                    <div class="btn-image">Shop Women <span class="bi bi-arrow-right"></span></div>
+                </div>
+                <div class="kids-image">
+                    <div class="main-title">Kids</div>
+                    <div class="btn-image">Shop Kids <span class="bi bi-arrow-right"></span></div>
+                </div>
+            </main>
+            <div class="free-help">
+                <div>
+                    <span class="bi bi-truck"></span>
+                    <span>FREE SHIPPING <p> From all orders over $100 </p></span>
+                </div>
+                <div>
+                    <span class="bi bi-repeat"></span>
+                    <span>FREE RETURNS <p> Return money within 30 days </p></span>
+                </div>
+                <div>
+                    <span class="bi bi-lock"></span>
+                    <span>SECURE SHOPPING <p> You're in safe hands </p></span>
+                </div>
+                <div>
+                    <span class="bi bi-tag"></span>
+                    <span> OVER 10000 STYLES<p> We have everything you need </p></span>
+                </div>
+            </div>
+            <hr>
+            <div class="new-collection">
+                <div class="best-pic">
+                    <h4>NEW COLLECTION</h4>
+                    <h1>Best Picks 2025</h1>
+                    <p>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br> above fly brought Very green.</p>
+                </div>
+                <div class="bag-collection">
+                    
+                </div>
+                <div class="printed-shirt">
+                    
+                </div>
+                <div class="basic-women-dress">
+                    
+                </div>
+                <div class="sweatshirts">
+                    
+                </div>
+            </div>
+        </section>
+            <footer>
+        <div class="footer-row-1">
+            <div class="footer-heading">Want style Ideas and Treats?</div>
+            <div class="footer-form">
+                <div class="email">
+                    <span>Enter Email* </span>
+                </div>
+                <div class="subscribe">
+                    <span>Subscribe</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row-2">
+            <div class="col-1">
+                <div class="footer-brand-title"><span>Shopper</span></div>
+                <div>
+                    <aside>
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-twitter"></span>
+                        <span class="bi bi-youtube"></span>
+                        <span ciass="bi bi-instagram"></span>
+                        <span class="bi bi-linkedin"></span>
+                    </aside>
+                </div>
+            </div>
+            <div>
+                <span class="service-title">Support</span>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+            </div>
+            <div>
+                <span class="service-title">Shop</span>
+                <span>Men's Shopping</span>
+                <span>Women's Shopping</span>
+                <span>Kids' Shopping</span>
+                <span>Discounts</span>
+            </div>
+            <div>
+                <span class="service-title">Company</span>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>               
+            </div>
+            <div>
+                <span class="service-title">Contact</span>
+                <address>
+                    <span>1-202-555-0105</span>
+                    <span>1-202-555-0106</span>
+                    <span>help@shopper.com</span>
+                </address>
+            </div>
+        </div>
+        <div class="footer-row-3">
+            <div>© 2019 All rights reserved. Designed by Unvab.</div>
+            <div>
+                <img src="https://shoplineimg.com/assets/footer/card_visa.png" width="40px" height="30px">
+                <img src="https://shoplineimg.com/assets/footer/card_master.png" width="40px" height="30px">
+                <img src="https://shoplineimg.com/assets/footer/card_paypal.png" width="40px" height="30px">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
