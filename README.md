@@ -1,5 +1,6 @@
 
 # 🛍️ Shopping App
+![image](https://github.com/user-attachments/assets/1773ef14-2f3e-4831-a35a-b8fdff72a84d)
 
 
 A simple shopping API that lets users browse products, add items to their cart, and complete purchases.
